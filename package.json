@@ -4,7 +4,11 @@
   "description": "Website for Web Co Agency",
   "main": "index.html",
   "scripts": {
+    "start": "npx -y serve -l 3000 .",
     "dev": "npx browser-sync start --server --files \"css/*.css, *.html, js/*.js\""
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
   },
   "keywords": [],
   "author": "",
