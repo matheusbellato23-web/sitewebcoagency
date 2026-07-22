@@ -624,6 +624,74 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 400);
     }, 4000);
   }
+
+  // 9. Ambient Moving Particle Background (Antigravity Style)
+  const bgCanvas = document.getElementById('ambientParticleCanvas');
+  if (bgCanvas) {
+    const ctx = bgCanvas.getContext('2d');
+    let width = bgCanvas.width = window.innerWidth;
+    let height = bgCanvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = bgCanvas.width = window.innerWidth;
+      height = bgCanvas.height = window.innerHeight;
+    });
+
+    const numParticles = Math.min(45, Math.floor(width / 30));
+    const particles = [];
+
+    for (let i = 0; i < numParticles; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        radius: Math.random() * 2 + 1,
+        alpha: Math.random() * 0.5 + 0.2
+      });
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 140, 255, ${p.alpha})`;
+        ctx.fill();
+
+        // Connect nearby particles with subtle glowing lines
+        for (let j = i + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dx = p.x - p2.x;
+          const dy = p.y - p2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 140) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.strokeStyle = `rgba(0, 140, 255, ${0.15 * (1 - dist / 140)})`;
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+          }
+        }
+      }
+
+      requestAnimationFrame(animateParticles);
+    }
+
+    animateParticles();
+  }
 });
 
 

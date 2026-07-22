@@ -20,6 +20,83 @@ body {
   color: var(--color-text-main);
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* ==========================================================================
+   Ambient Dynamic Moving Background (Antigravity Style)
+   ========================================================================== */
+.ambient-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#ambientParticleCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55;
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.ambient-orb.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 140, 255, 0.45) 0%, rgba(0, 200, 255, 0) 70%);
+  top: -100px;
+  right: -50px;
+  animation: floatOrb1 22s ease-in-out infinite alternate;
+}
+
+.ambient-orb.orb-2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 200, 83, 0.35) 0%, rgba(0, 140, 255, 0) 70%);
+  bottom: 10%;
+  left: -150px;
+  animation: floatOrb2 28s ease-in-out infinite alternate;
+}
+
+.ambient-orb.orb-3 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.35) 0%, rgba(0, 140, 255, 0) 70%);
+  top: 40%;
+  right: 15%;
+  animation: floatOrb3 25s ease-in-out infinite alternate;
+}
+
+@keyframes floatOrb1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-120px, 80px) scale(1.15); }
+  100% { transform: translate(-60px, 160px) scale(0.95); }
+}
+
+@keyframes floatOrb2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(140px, -100px) scale(1.2); }
+  100% { transform: translate(80px, -180px) scale(0.9); }
+}
+
+@keyframes floatOrb3 {
+  0% { transform: translate(0, 0) scale(0.9); }
+  50% { transform: translate(-100px, -120px) scale(1.25); }
+  100% { transform: translate(100px, 60px) scale(1); }
 }
 
 /* ==========================================================================
