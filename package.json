@@ -1,0 +1,12 @@
+{
+  "name": "site-web-co-agency",
+  "version": "1.0.0",
+  "description": "Website for Web Co Agency",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files \"css/*.css, *.html, js/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
