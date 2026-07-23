@@ -2403,11 +2403,13 @@ textarea.form-input {
 .preview-canvas-wrapper {
   background-color: #cbd5e1;
   padding: 24px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   height: 580px;
   box-sizing: border-box;
   position: relative;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
 }
 
 .preview-canvas-wrapper::-webkit-scrollbar {

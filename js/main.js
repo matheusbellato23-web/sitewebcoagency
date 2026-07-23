@@ -269,34 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   if (simSiteCanvas) {
-    // 7.0 Dedicated Mouse Wheel & Touch Interceptor for Mockup Window
-    const simWindow = document.querySelector('.simulator-preview-window');
-    if (previewCanvasWrapper && simWindow) {
-      simWindow.addEventListener('wheel', (e) => {
-        // Direct mouse wheel scrolling on the preview canvas
-        e.preventDefault();
-        previewCanvasWrapper.scrollTop += e.deltaY;
-      }, { passive: false });
-
-      // Touch Drag Support for Smartphones / Mobile
-      let startY = 0;
-      let startScrollTop = 0;
-
-      simWindow.addEventListener('touchstart', (e) => {
-        if (e.touches.length === 1) {
-          startY = e.touches[0].pageY;
-          startScrollTop = previewCanvasWrapper.scrollTop;
-        }
-      }, { passive: true });
-
-      simWindow.addEventListener('touchmove', (e) => {
-        if (e.touches.length === 1) {
-          const deltaY = startY - e.touches[0].pageY;
-          previewCanvasWrapper.scrollTop = startScrollTop + deltaY;
-        }
-      }, { passive: true });
-    }
-
     // 7.1 Layout Type Selection
     if (simLayoutSelect) {
       simLayoutSelect.addEventListener('change', (e) => {
