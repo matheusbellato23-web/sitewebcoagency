@@ -29,8 +29,8 @@
   <meta property="twitter:image" content="https://webcoagency.site/img/og-image.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/variables.css">
@@ -116,8 +116,7 @@
       <li><a href="#heroSection" class="nav-link active">Home</a></li>
       <li><a href="#simulador" class="nav-link nav-highlight" style="color: var(--color-blue-electric); font-weight: 700;">🎨 Monte Seu Site</a></li>
       <li><a href="#servicos" class="nav-link">Serviços</a></li>
-      <li><a href="#showcase" class="nav-link">Demonstração</a></li>
-      <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+      <li><a href="#portfolio" class="nav-link">Cases</a></li>
       <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
       <li><a href="#contato" class="nav-link">Contato</a></li>
     </ul>
@@ -143,6 +142,23 @@
             <a href="#servicos" class="btn-pill btn-pill-outline-blue">
               Ver Serviços
             </a>
+          </div>
+
+          <div class="hero-partner-badges">
+            <div class="partner-badge">
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23EA4335' d='M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z'/%3E%3Cpath fill='%234285F4' d='M46.5 24c0-1.63-.15-3.2-.42-4.73H24v9h12.75c-.55 2.96-2.22 5.47-4.73 7.15l7.35 5.7C43.68 36.83 46.5 31.02 46.5 24z'/%3E%3Cpath fill='%23FBBC05' d='M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z'/%3E%3Cpath fill='%2334A853' d='M24 38.5c-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48c6.48 0 11.93-2.13 15.89-5.81l-7.35-5.7c-2.28 1.52-5.18 2.51-8.54 2.51z'/%3E%3C/svg%3E" alt="Google Partner" class="partner-icon">
+              <div class="partner-text">
+                <span>Google Partner</span>
+                <strong>Agência Certificada</strong>
+              </div>
+            </div>
+            <div class="partner-badge">
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%230064e0' d='M24 0C10.74 0 0 10.74 0 24c0 11.98 8.8 21.9 20.25 23.7V30.9h-6.11V24h6.11v-5.25c0-6.03 3.59-9.36 9.09-9.36 2.63 0 5.39.47 5.39.47v5.92h-3.03c-2.99 0-3.92 1.86-3.92 3.76V24h6.68l-1.07 6.9h-5.61V47.7C39.2 45.9 48 35.98 48 24 48 10.74 37.26 0 24 0z'/%3E%3C/svg%3E" alt="Meta Business Partner" class="partner-icon">
+              <div class="partner-text">
+                <span>Meta Business Partner</span>
+                <strong>Tráfego Homologado</strong>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -665,56 +681,167 @@
     <div class="container">
       <div class="services-header-row scroll-reveal">
         <div class="services-header-left">
-          <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nossos Serviços</span>
-          <h2>COMO ACELERAMOS SEU NEGÓCIO</h2>
+          <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nosso Ecossistema</span>
+          <h2>O SISTEMA COMPLETO POR TRÁS DE MARCAS QUE CRESCEM</h2>
           <p>
-            Criamos ecossistemas comerciais digitais completos que atraem, engajam e convertem visitantes em clientes fiéis.
+            Um único time cuidando de marca, presença digital, tráfego pago e performance, com método, consistência e foco total em vendas.
           </p>
         </div>
-        <a href="#showcase" class="btn-pill btn-pill-outline-navy" style="font-size: 0.8rem; padding: 12px 24px;">
-          Ver Nossas Soluções <span class="arrow">→</span>
-        </a>
       </div>
 
-      <div class="services-grid">
+      <div class="services-grid services-grid-6">
         <!-- Card 1 -->
         <div class="service-card scroll-reveal">
           <div class="service-card-top">
-            <div class="service-card-icon">🖥️</div>
-            <h3>Criação de Sites Profissionais</h3>
-            <p>Landing pages e sites institucionais sob medida, 100% responsivos, rápidos e estruturados para conversão e pontuação no Google.</p>
+            <div class="service-card-icon">🎨</div>
+            <h3>Identidade &amp; Marca</h3>
+            <p>Uma marca consistente, do conceito aos materiais institucionais, para ser lembrada e reconhecida.</p>
+            <div class="service-card-tags">
+              <span>Criação de marca</span>
+              <span>Branding</span>
+            </div>
           </div>
-          <span class="service-card-arrow">→</span>
         </div>
 
         <!-- Card 2 -->
         <div class="service-card scroll-reveal" style="transition-delay: 0.05s;">
           <div class="service-card-top">
-            <div class="service-card-icon">🛒</div>
-            <h3>Desenvolvimento E-commerce</h3>
-            <p>Lojas virtuais robustas integradas com meios de pagamento, frete e catálogos automatizados para que sua empresa venda 24 horas por dia.</p>
+            <div class="service-card-icon">🖥️</div>
+            <h3>Sites &amp; Sistemas</h3>
+            <p>Plataformas rápidas, bonitas e feitas sob medida para converter visitantes em leads qualificados.</p>
+            <div class="service-card-tags">
+              <span>Sites</span>
+              <span>Landing Pages</span>
+              <span>E-commerce</span>
+            </div>
           </div>
-          <span class="service-card-arrow">→</span>
         </div>
 
         <!-- Card 3 -->
         <div class="service-card scroll-reveal" style="transition-delay: 0.1s;">
           <div class="service-card-top">
-            <div class="service-card-icon">🚀</div>
-            <h3>Google Ads &amp; Tráfego Pago</h3>
-            <p>Estratégia completa de anúncios no Google. Atraia leads qualificados que estão procurando ativamente pelo seu produto ou serviço.</p>
+            <div class="service-card-icon">📱</div>
+            <h3>Redes Sociais</h3>
+            <p>Conteúdo estratégico e gestão de canais que constroem audiência engajada e mantêm sua marca relevante.</p>
+            <div class="service-card-tags">
+              <span>Instagram</span>
+              <span>LinkedIn</span>
+              <span>Facebook</span>
+            </div>
           </div>
-          <span class="service-card-arrow">→</span>
         </div>
 
         <!-- Card 4 -->
         <div class="service-card scroll-reveal" style="transition-delay: 0.15s;">
           <div class="service-card-top">
-            <div class="service-card-icon">⚡</div>
-            <h3>SEO &amp; Velocidade Extrema</h3>
-            <p>Otimização técnica para o seu site carregar em menos de 1 segundo. Reduza a taxa de rejeição e apareça organicamente nas buscas.</p>
+            <div class="service-card-icon">📈</div>
+            <h3>Campanhas &amp; Anúncios</h3>
+            <p>Mídia paga com foco total em retorno sobre investimento. Mais leads e vendas no Google Ads e Meta Ads.</p>
+            <div class="service-card-tags">
+              <span>Google Ads</span>
+              <span>Meta Ads</span>
+              <span>Remarketing</span>
+            </div>
           </div>
-          <span class="service-card-arrow">→</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card scroll-reveal" style="transition-delay: 0.2s;">
+          <div class="service-card-top">
+            <div class="service-card-icon">🔍</div>
+            <h3>SEO &amp; Conteúdo</h3>
+            <p>Sua empresa encontrada no Google organicamente por quem realmente procura o que você vende.</p>
+            <div class="service-card-tags">
+              <span>SEO</span>
+              <span>Blogs</span>
+              <span>Velocidade</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card scroll-reveal" style="transition-delay: 0.25s;">
+          <div class="service-card-top">
+            <div class="service-card-icon">💡</div>
+            <h3>Consultorias &amp; Estratégia</h3>
+            <p>Análise de processos comerciais, funil de vendas e treinamento para acelerar o crescimento do seu negócio.</p>
+            <div class="service-card-tags">
+              <span>Atendimento</span>
+              <span>CRMs</span>
+              <span>Funil de Vendas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investment vs Profit Calculator (Proxon Style) -->
+  <section class="section-roi section-padding">
+    <div class="container">
+      <div class="roi-wrapper">
+        <div class="roi-info scroll-reveal">
+          <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Métricas de ROI</span>
+          <h2>A VIRADA NA RELAÇÃO ENTRE O QUE ENTRA E O QUE SAI</h2>
+          <p>
+            Gerenciamos seu orçamento de marketing com foco total em rentabilidade. Arraste o simulador abaixo para estimar o crescimento do seu faturamento com a nossa gestão de tráfego e sites de alta performance.
+          </p>
+          <div class="roi-simulator-box">
+            <div class="roi-slider-group">
+              <div class="roi-slider-label">
+                <span>Investimento Mensal em Tráfego:</span>
+                <strong id="roiInvestText">R$ 2.000</strong>
+              </div>
+              <input type="range" id="roiSlider" min="1000" max="20000" step="500" value="2000" class="roi-range">
+            </div>
+            
+            <div class="roi-metrics-grid">
+              <div class="roi-metric-item">
+                <span>Cliques Estimados</span>
+                <h4 id="roiClicksVal">5.000</h4>
+              </div>
+              <div class="roi-metric-item">
+                <span>Leads Qualificados</span>
+                <h4 id="roiLeadsVal">350</h4>
+              </div>
+              <div class="roi-metric-item highlight">
+                <span>Retorno Estimado (Lucro)</span>
+                <h4 id="roiProfitVal">R$ 10.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Interactive Chart Visual (SVG Curve) -->
+        <div class="roi-chart-box scroll-reveal">
+          <div class="roi-chart-header">
+            <span>INVESTIMENTO X LUCRO ESTIMADO</span>
+            <div class="roi-chart-legend">
+              <span class="legend-item invest">Investimento</span>
+              <span class="legend-item profit">Retorno</span>
+            </div>
+          </div>
+          <div class="roi-chart-canvas">
+            <svg viewBox="0 0 500 250" class="roi-svg-chart">
+              <!-- Grid Lines -->
+              <line x1="0" y1="200" x2="500" y2="200" stroke="#f1f5f9" stroke-width="2"/>
+              <line x1="0" y1="130" x2="500" y2="130" stroke="#f1f5f9" stroke-dasharray="4"/>
+              <line x1="0" y1="60" x2="500" y2="60" stroke="#f1f5f9" stroke-dasharray="4"/>
+              
+              <!-- Shading under the curves -->
+              <path d="M 0 200 Q 150 180 300 150 T 500 130 L 500 200 Z" fill="rgba(148, 163, 184, 0.08)"/>
+              <path id="chartProfitArea" d="M 0 200 Q 150 140 300 80 T 500 30 L 500 200 Z" fill="rgba(0, 140, 255, 0.06)"/>
+
+              <!-- Investment Line -->
+              <path d="M 0 200 Q 150 180 300 150 T 500 130" fill="none" stroke="#94a6b8" stroke-width="3" stroke-dasharray="5"/>
+              <!-- Profit Line -->
+              <path id="chartProfitLine" d="M 0 200 Q 150 140 300 80 T 500 30" fill="none" stroke="var(--color-blue-electric)" stroke-width="4"/>
+              
+              <!-- Chart Nodes -->
+              <circle cx="300" cy="80" r="6" fill="var(--color-blue-electric)" stroke="#ffffff" stroke-width="2"/>
+              <text x="315" y="75" fill="var(--color-blue-electric)" font-weight="bold" font-size="12">Começou com a WEBCO</text>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -1033,78 +1160,184 @@
   <!-- Portfolio Section -->
   <section class="section-portfolio section-padding" id="portfolio">
     <div class="container">
-      <div class="section-showcase-title scroll-reveal" style="margin-bottom: 40px;">
-        <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nosso Portfólio</span>
-        <h2>PROJETOS DE SUCESSO</h2>
-        <p>Amostra dos nossos trabalhos mais recentes focados em conversão e resultados reais para os clientes.</p>
+      <div class="section-showcase-title scroll-reveal" style="margin-bottom: 60px;">
+        <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nossos Cases</span>
+        <h2>PROJETOS DE ALTA PERFORMANCE COM RESULTADOS REAIS</h2>
+        <p>Marcas de diferentes setores que escolheram crescer com estratégia, consistência e resultado.</p>
       </div>
 
-      <div class="portfolio-grid">
-        <!-- Project 1 -->
-        <div class="portfolio-card scroll-reveal">
-          <div class="portfolio-img-box">
-            <span>Gráfica São Paulo</span>
+      <div class="cases-split-container">
+        <!-- Left Side: Interactive Cases Menu -->
+        <div class="cases-list-menu scroll-reveal">
+          <div class="case-menu-item active" data-case="morais">
+            <span class="case-num">01</span>
+            <div class="case-info">
+              <h3>Morais de Castro</h3>
+              <p>Indústria Química - Tráfego &amp; Site</p>
+            </div>
+            <span class="case-arrow">→</span>
           </div>
-          <div class="portfolio-content">
-            <div class="portfolio-info">
-              <p>Site Institucional &amp; Google Ads</p>
-              <h3>Gráfica São Paulo</h3>
+
+          <div class="case-menu-item" data-case="henrimar">
+            <span class="case-num">02</span>
+            <div class="case-info">
+              <h3>Henrimar</h3>
+              <p>Fabricante de Piscinas - Landing Page</p>
             </div>
-            <div class="portfolio-stats">
-              <span class="portfolio-stat-label">Crescimento de Leads</span>
-              <span class="portfolio-stat-val">+150%</span>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="siamac">
+            <span class="case-num">03</span>
+            <div class="case-info">
+              <h3>SIAMAC</h3>
+              <p>Sistemas de Automação - Funil Digital</p>
             </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="transpiraja">
+            <span class="case-num">04</span>
+            <div class="case-info">
+              <h3>Transpirajá</h3>
+              <p>Logística e Transporte - Captação B2B</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="nadier">
+            <span class="case-num">05</span>
+            <div class="case-info">
+              <h3>Nadier Pedreira de Freitas</h3>
+              <p>Advocacia e Direito - Posicionamento Local</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="biomedical">
+            <span class="case-num">06</span>
+            <div class="case-info">
+              <h3>Biomedical</h3>
+              <p>Produtos Médicos - Site &amp; Google Ads</p>
+            </div>
+            <span class="case-arrow">→</span>
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="portfolio-card scroll-reveal" style="transition-delay: 0.05s;">
-          <div class="portfolio-img-box">
-            <span>YellowGraf</span>
+        <!-- Right Side: Dynamic Mockup Display -->
+        <div class="case-preview-display scroll-reveal">
+          <div class="browser-container case-browser-mockup">
+            <div class="browser-header">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="browser-address" id="caseBrowserAddress">moraisdecastro.com.br</div>
+            </div>
+            <div class="browser-viewport case-browser-viewport" id="caseBrowserViewport">
+              <!-- Morais de Castro Case Screen -->
+              <div class="case-screen-content active" id="case-morais">
+                <div class="case-header-pill">Química Industrial</div>
+                <h2>Inovação Química &amp; Distribuição em Grande Escala</h2>
+                <p>Desenvolvimento de portal corporativo de alta performance integrado com catálogo de produtos regulados e inteligência de distribuição geográfica.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">+150%</div>
+                  <div class="metric-lbl">Leads Comerciais Gerados pelo Canal Digital</div>
+                </div>
+              </div>
+
+              <!-- Henrimar Case Screen -->
+              <div class="case-screen-content" id="case-henrimar">
+                <div class="case-header-pill">Piscinas &amp; Lazer</div>
+                <h2>Momentos Únicos com a Linha de Piscinas Exclusivas</h2>
+                <p>Landing page focada na conversão de revendedores autorizados e orçamentos locais por geolocalização do cliente final.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">+80%</div>
+                  <div class="metric-lbl">Aumento no Volume de Orçamentos Locais</div>
+                </div>
+              </div>
+
+              <!-- SIAMAC Case Screen -->
+              <div class="case-screen-content" id="case-siamac">
+                <div class="case-header-pill">Automação</div>
+                <h2>Sistemas Inteligentes de Automação Comercial</h2>
+                <p>Website e funil de vendas integrado para sistemas corporativos e ERPs para automação de faturamento e PDVs em lojas.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">12.8%</div>
+                  <div class="metric-lbl">Taxa Média de Conversão de Cliques em Leads</div>
+                </div>
+              </div>
+
+              <!-- Transpirajá Case Screen -->
+              <div class="case-screen-content" id="case-transpiraja">
+                <div class="case-header-pill">Logística B2B</div>
+                <h2>Logística e Transporte Rodoviário de Alta Confiança</h2>
+                <p>Página otimizada para atração de parcerias de carga pesada e captação de novos clientes logísticos nas rodovias nacionais.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">-35% CPL</div>
+                  <div class="metric-lbl">Redução no Custo por Lead no Google Search</div>
+                </div>
+              </div>
+
+              <!-- Nadier Case Screen -->
+              <div class="case-screen-content" id="case-nadier">
+                <div class="case-header-pill">Direito &amp; Advocacia</div>
+                <h2>Assessoria Jurídica de Excelência e Credibilidade</h2>
+                <p>Design sóbrio de altíssimo nível, otimizado para o Google Local e focado na captação qualificada de consultas empresariais.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">+200%</div>
+                  <div class="metric-lbl">Aumento nos Contatos Diretos de Clientes Corporativos</div>
+                </div>
+              </div>
+
+              <!-- Biomedical Case Screen -->
+              <div class="case-screen-content" id="case-biomedical">
+                <div class="case-header-pill">Medicina</div>
+                <h2>Equipamentos e Produtos Médicos de Ponta</h2>
+                <p>Portal institucional completo com especificações reguladas e canais de contato rápidos para hospitais, clínicas e profissionais.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">3x ROI</div>
+                  <div class="metric-lbl">Retorno sobre o Investimento em Mídia Paga</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-content">
-            <div class="portfolio-info">
-              <p>E-commerce de Embalagens</p>
-              <h3>YellowGraf</h3>
-            </div>
-            <div class="portfolio-stats">
-              <span class="portfolio-stat-label">Vendas Trimestrais</span>
-              <span class="portfolio-stat-val">+80%</span>
-            </div>
+          <div class="case-cta-container">
+            <a href="#contato" class="btn-pill btn-pill-blue">QUERO UM CASE ASSIM →</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Project 3 -->
-        <div class="portfolio-card scroll-reveal" style="transition-delay: 0.1s;">
-          <div class="portfolio-img-box">
-            <span>Escola de Jiu-Jitsu</span>
-          </div>
-          <div class="portfolio-content">
-            <div class="portfolio-info">
-              <p>Landing Page de Captura</p>
-              <h3>Escola de Jiu-Jitsu</h3>
-            </div>
-            <div class="portfolio-stats">
-              <span class="portfolio-stat-label">Fidelização e Leads</span>
-              <span class="portfolio-stat-val">+120%</span>
-            </div>
+  <!-- WebCo Labs Section -->
+  <section class="section-labs section-padding">
+    <div class="container">
+      <div class="labs-box scroll-reveal">
+        <div class="labs-content">
+          <span class="labs-tag">LABS DIVISION</span>
+          <h2>WEBCO LABS &mdash; NOSSA DIVISÃO DE TECNOLOGIA</h2>
+          <p>
+            Toda a engenharia de performance, velocidade extrema de carregamento e inteligência artificial que embarcamos nos sites dos nossos clientes é desenvolvida na <strong>WebCo Labs</strong>.
+          </p>
+          <p>
+            Uma divisão focada em criar frameworks modernos, arquiteturas limpas e integrações avançadas de alta escala.
+          </p>
+          <div class="labs-btn-row">
+            <a href="https://webcolabs.com.br" target="_blank" class="btn-pill btn-pill-outline-blue">
+              Conhecer a WebCo Labs 🌐
+            </a>
           </div>
         </div>
-
-        <!-- Project 4 -->
-        <div class="portfolio-card scroll-reveal" style="transition-delay: 0.15s;">
-          <div class="portfolio-img-box">
-            <span>Beauty Studio</span>
-          </div>
-          <div class="portfolio-content">
-            <div class="portfolio-info">
-              <p>Landing Page &amp; Google Local</p>
-              <h3>Beauty Studio</h3>
-            </div>
-            <div class="portfolio-stats">
-              <span class="portfolio-stat-label">Custo por Lead (CPL)</span>
-              <span class="portfolio-stat-val" style="color: var(--color-blue-neon); font-size: 1.05rem;">-45% CPL</span>
-            </div>
+        <div class="labs-visual">
+          <div class="labs-glow-cube">
+            <div class="cube-face front">W</div>
+            <div class="cube-face back">C</div>
+            <div class="cube-face right">L</div>
+            <div class="cube-face left">O</div>
+            <div class="cube-face top">A</div>
+            <div class="cube-face bottom">B</div>
           </div>
         </div>
       </div>

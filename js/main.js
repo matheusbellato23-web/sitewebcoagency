@@ -664,6 +664,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animateParticles();
   }
+
+  // 10. Interactive ROI Calculator
+  const roiSlider = document.getElementById('roiSlider');
+  const roiInvestText = document.getElementById('roiInvestText');
+  const roiClicksVal = document.getElementById('roiClicksVal');
+  const roiLeadsVal = document.getElementById('roiLeadsVal');
+  const roiProfitVal = document.getElementById('roiProfitVal');
+  const chartProfitLine = document.getElementById('chartProfitLine');
+  const chartProfitArea = document.getElementById('chartProfitArea');
+
+  if (roiSlider) {
+    roiSlider.addEventListener('input', (e) => {
+      const invest = parseInt(e.target.value);
+      roiInvestText.textContent = `R$ ${invest.toLocaleString('pt-BR')}`;
+      
+      const clicks = Math.floor(invest * 2.5);
+      roiClicksVal.textContent = clicks.toLocaleString('pt-BR');
+      
+      const leads = Math.floor(clicks * 0.07);
+      roiLeadsVal.textContent = leads.toLocaleString('pt-BR');
+      
+      const profit = Math.floor(leads * 42); // 4.2x ROI
+      roiProfitVal.textContent = `R$ ${profit.toLocaleString('pt-BR')}`;
+
+      // Dynamically adjust SVG path for visual feedback
+      const scale = (invest - 1000) / 19000; // 0 to 1
+      const yVal = 140 - (scale * 110);
+      const yVal2 = 80 - (scale * 60);
+      const yEnd = 30 - (scale * 20);
+      
+      if (chartProfitLine) {
+        chartProfitLine.setAttribute('d', `M 0 200 Q 150 ${yVal} 300 ${yVal2} T 500 ${yEnd}`);
+      }
+      if (chartProfitArea) {
+        chartProfitArea.setAttribute('d', `M 0 200 Q 150 ${yVal} 300 ${yVal2} T 500 ${yEnd} L 500 200 Z`);
+      }
+    });
+  }
+
+  // 11. Interactive Cases switcher (Dperrone Style)
+  const caseMenuItems = document.querySelectorAll('.case-menu-item');
+  const caseScreenContents = document.querySelectorAll('.case-screen-content');
+  const caseBrowserAddress = document.getElementById('caseBrowserAddress');
+
+  if (caseMenuItems.length > 0) {
+    caseMenuItems.forEach(item => {
+      const handleSwitch = () => {
+        caseMenuItems.forEach(mi => mi.classList.remove('active'));
+        item.classList.add('active');
+
+        const selectedCase = item.getAttribute('data-case');
+
+        caseScreenContents.forEach(screen => {
+          screen.classList.remove('active');
+        });
+
+        const activeScreen = document.getElementById(`case-${selectedCase}`);
+        if (activeScreen) {
+          activeScreen.classList.add('active');
+        }
+
+        if (caseBrowserAddress) {
+          if (selectedCase === 'morais') caseBrowserAddress.textContent = 'moraisdecastro.com.br';
+          else if (selectedCase === 'henrimar') caseBrowserAddress.textContent = 'henrimar.com.br';
+          else if (selectedCase === 'siamac') caseBrowserAddress.textContent = 'siamac.com.br';
+          else if (selectedCase === 'transpiraja') caseBrowserAddress.textContent = 'transpiraja.com.br';
+          else if (selectedCase === 'nadier') caseBrowserAddress.textContent = 'nadieradvogados.com.br';
+          else if (selectedCase === 'biomedical') caseBrowserAddress.textContent = 'biomedicalprodutos.com.br';
+        }
+      };
+
+      item.addEventListener('click', handleSwitch);
+      item.addEventListener('mouseenter', handleSwitch);
+    });
+  }
 });
 
 
