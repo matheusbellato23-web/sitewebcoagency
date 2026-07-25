@@ -33,7 +33,7 @@ body {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -459,14 +459,20 @@ a {
    Hero Section
    ========================================================================== */
 .hero {
-  background-color: var(--color-white);
-  color: var(--color-text-main);
+  background-color: var(--color-header-bg);
+  color: var(--color-white);
   min-height: 90vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
   padding-top: 130px;
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 5;
 }
 
 .hero::before {
@@ -476,8 +482,8 @@ a {
   right: -10%;
   width: 60%;
   height: 60%;
-  background: radial-gradient(circle, rgba(0, 140, 255, 0.05) 0%, transparent 60%);
-  z-index: 1;
+  background: radial-gradient(circle, rgba(0, 140, 255, 0.08) 0%, transparent 60%);
+  z-index: 2;
 }
 
 .hero-title {
@@ -485,7 +491,7 @@ a {
   font-weight: 800;
   letter-spacing: -1.5px;
   line-height: 1.1;
-  color: var(--color-text-main);
+  color: var(--color-white);
 }
 
 @media (max-width: 768px) {
@@ -496,7 +502,7 @@ a {
 
 .hero-desc {
   font-size: 1.15rem;
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.75);
   max-width: 580px;
   line-height: 1.6;
 }
@@ -627,6 +633,8 @@ a {
 .section-services {
   background-color: var(--color-white);
   color: var(--color-text-main);
+  position: relative;
+  z-index: 10;
 }
 
 .services-header-row {
@@ -1251,6 +1259,8 @@ a {
 .section-portfolio {
   background-color: var(--color-section-bg-alt);
   border-bottom: 1px solid var(--color-gray-light);
+  position: relative;
+  z-index: 10;
 }
 
 .portfolio-grid {
@@ -1355,6 +1365,8 @@ a {
   background-color: var(--color-section-bg-alt);
   color: var(--color-text-main);
   border-top: 1px solid var(--color-gray-light);
+  position: relative;
+  z-index: 10;
 }
 
 .section-proposito .content-tag {
@@ -1425,6 +1437,8 @@ a {
 .contact-section {
   background-color: var(--color-section-bg-alt);
   padding: 100px 5%;
+  position: relative;
+  z-index: 10;
 }
 
 .contact-card {
@@ -2131,6 +2145,8 @@ textarea.form-input {
   background-color: var(--color-section-bg-alt);
   border-top: 1px solid var(--color-gray-light);
   border-bottom: 1px solid var(--color-gray-light);
+  position: relative;
+  z-index: 10;
 }
 
 .simulator-wrapper {

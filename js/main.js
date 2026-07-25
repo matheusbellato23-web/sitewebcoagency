@@ -609,17 +609,17 @@ document.addEventListener('DOMContentLoaded', () => {
       height = bgCanvas.height = window.innerHeight;
     });
 
-    const numParticles = Math.min(45, Math.floor(width / 30));
+    const numParticles = Math.min(65, Math.floor(width / 20));
     const particles = [];
 
     for (let i = 0; i < numParticles; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
-        radius: Math.random() * 2 + 1,
-        alpha: Math.random() * 0.5 + 0.2
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+        radius: Math.random() * 3 + 1.5,
+        alpha: Math.random() * 0.5 + 0.4
       });
     }
 
@@ -648,12 +648,12 @@ document.addEventListener('DOMContentLoaded', () => {
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 140) {
+          if (dist < 160) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(0, 140, 255, ${0.15 * (1 - dist / 140)})`;
-            ctx.lineWidth = 0.8;
+            ctx.strokeStyle = `rgba(0, 140, 255, ${0.35 * (1 - dist / 160)})`;
+            ctx.lineWidth = 1.0;
             ctx.stroke();
           }
         }
