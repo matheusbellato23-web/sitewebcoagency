@@ -247,6 +247,428 @@
     </div>
   </section>
 
+  <!-- Services Section -->
+  <section class="section-services section-padding" id="servicos">
+    <div class="container">
+      <div class="services-header-row scroll-reveal">
+        <div class="services-header-left">
+          <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nosso Ecossistema</span>
+          <h2>O SISTEMA COMPLETO POR TRÁS DE MARCAS QUE CRESCEM</h2>
+          <p>
+            Um único time cuidando de marca, presença digital, tráfego pago e performance, com método, consistência e foco total em vendas.
+          </p>
+        </div>
+      </div>
+
+      <div class="services-grid services-grid-6">
+        <!-- Card 1 -->
+        <div class="service-card scroll-reveal">
+          <div class="service-card-top">
+            <div class="service-card-icon">🎨</div>
+            <h3>Identidade &amp; Marca</h3>
+            <p>Uma marca consistente, do conceito aos materiais institucionais, para ser lembrada e reconhecida.</p>
+            <div class="service-card-tags">
+              <span>Criação de marca</span>
+              <span>Branding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card scroll-reveal" style="transition-delay: 0.05s;">
+          <div class="service-card-top">
+            <div class="service-card-icon">🖥️</div>
+            <h3>Sites &amp; Sistemas</h3>
+            <p>Plataformas rápidas, bonitas e feitas sob medida para converter visitantes em leads qualificados.</p>
+            <div class="service-card-tags">
+              <span>Sites</span>
+              <span>Landing Pages</span>
+              <span>E-commerce</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card scroll-reveal" style="transition-delay: 0.1s;">
+          <div class="service-card-top">
+            <div class="service-card-icon">📱</div>
+            <h3>Redes Sociais</h3>
+            <p>Conteúdo estratégico e gestão de canais que constroem audiência engajada e mantêm sua marca relevante.</p>
+            <div class="service-card-tags">
+              <span>Instagram</span>
+              <span>LinkedIn</span>
+              <span>Facebook</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card scroll-reveal" style="transition-delay: 0.15s;">
+          <div class="service-card-top">
+            <div class="service-card-icon">📈</div>
+            <h3>Campanhas &amp; Anúncios</h3>
+            <p>Mídia paga com foco total em retorno sobre investimento. Mais leads e vendas no Google Ads e Meta Ads.</p>
+            <div class="service-card-tags">
+              <span>Google Ads</span>
+              <span>Meta Ads</span>
+              <span>Remarketing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card scroll-reveal" style="transition-delay: 0.2s;">
+          <div class="service-card-top">
+            <div class="service-card-icon">🔍</div>
+            <h3>SEO &amp; Conteúdo</h3>
+            <p>Sua empresa encontrada no Google organicamente por quem realmente procura o que você vende.</p>
+            <div class="service-card-tags">
+              <span>SEO</span>
+              <span>Blogs</span>
+              <span>Velocidade</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card scroll-reveal" style="transition-delay: 0.25s;">
+          <div class="service-card-top">
+            <div class="service-card-icon">💡</div>
+            <h3>Consultorias &amp; Estratégia</h3>
+            <p>Análise de processos comerciais, funil de vendas e treinamento para acelerar o crescimento do seu negócio.</p>
+            <div class="service-card-tags">
+              <span>Atendimento</span>
+              <span>CRMs</span>
+              <span>Funil de Vendas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investment vs Profit Calculator (Proxon Style) -->
+  <section class="section-roi section-padding">
+    <div class="container">
+      <div class="roi-wrapper">
+        <div class="roi-info scroll-reveal">
+          <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Métricas de ROI</span>
+          <h2>A VIRADA NA RELAÇÃO ENTRE O QUE ENTRA E O QUE SAI</h2>
+          <p>
+            Gerenciamos seu orçamento de marketing com foco total em rentabilidade. Arraste o simulador abaixo para estimar o crescimento do seu faturamento com a nossa gestão de tráfego e sites de alta performance.
+          </p>
+          <div class="roi-simulator-box">
+            <div class="roi-slider-group">
+              <div class="roi-slider-label">
+                <span>Investimento Mensal em Tráfego:</span>
+                <strong id="roiInvestText">R$ 2.000</strong>
+              </div>
+              <input type="range" id="roiSlider" min="1000" max="20000" step="500" value="2000" class="roi-range">
+            </div>
+            
+            <div class="roi-metrics-grid">
+              <div class="roi-metric-item">
+                <span>Cliques Estimados</span>
+                <h4 id="roiClicksVal">5.000</h4>
+              </div>
+              <div class="roi-metric-item">
+                <span>Leads Qualificados</span>
+                <h4 id="roiLeadsVal">350</h4>
+              </div>
+              <div class="roi-metric-item highlight">
+                <span>Retorno Estimado (Lucro)</span>
+                <h4 id="roiProfitVal">R$ 10.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Interactive Chart Visual (SVG Curve) -->
+        <div class="roi-chart-box scroll-reveal">
+          <div class="roi-chart-header">
+            <span>INVESTIMENTO X LUCRO ESTIMADO</span>
+            <div class="roi-chart-legend">
+              <span class="legend-item invest">Investimento</span>
+              <span class="legend-item profit">Retorno</span>
+            </div>
+          </div>
+          <div class="roi-chart-canvas">
+            <svg viewBox="0 0 500 250" class="roi-svg-chart">
+              <!-- Grid Lines -->
+              <line x1="0" y1="200" x2="500" y2="200" stroke="#f1f5f9" stroke-width="2"/>
+              <line x1="0" y1="130" x2="500" y2="130" stroke="#f1f5f9" stroke-dasharray="4"/>
+              <line x1="0" y1="60" x2="500" y2="60" stroke="#f1f5f9" stroke-dasharray="4"/>
+              
+              <!-- Shading under the curves -->
+              <path d="M 0 200 Q 150 180 300 150 T 500 130 L 500 200 Z" fill="rgba(148, 163, 184, 0.08)"/>
+              <path id="chartProfitArea" d="M 0 200 Q 150 140 300 80 T 500 30 L 500 200 Z" fill="rgba(0, 140, 255, 0.06)"/>
+
+              <!-- Investment Line -->
+              <path d="M 0 200 Q 150 180 300 150 T 500 130" fill="none" stroke="#94a6b8" stroke-width="3" stroke-dasharray="5"/>
+              <!-- Profit Line -->
+              <path id="chartProfitLine" d="M 0 200 Q 150 140 300 80 T 500 30" fill="none" stroke="var(--color-blue-electric)" stroke-width="4"/>
+              
+              <!-- Chart Nodes -->
+              <circle cx="300" cy="80" r="6" fill="var(--color-blue-electric)" stroke="#ffffff" stroke-width="2"/>
+              <text x="315" y="75" fill="var(--color-blue-electric)" font-weight="bold" font-size="12">Começou com a WEBCO</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Portfolio Section -->
+  <section class="section-portfolio section-padding" id="portfolio">
+    <div class="container">
+      <div class="section-showcase-title scroll-reveal" style="margin-bottom: 60px;">
+        <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nossos Cases</span>
+        <h2>PROJETOS DE ALTA PERFORMANCE COM RESULTADOS REAIS</h2>
+        <p>Marcas de diferentes setores que escolheram crescer com estratégia, consistência e resultado.</p>
+      </div>
+
+      <div class="cases-split-container">
+        <!-- Left Side: Interactive Cases Menu -->
+        <div class="cases-list-menu scroll-reveal">
+          <div class="case-menu-item active" data-case="morais">
+            <span class="case-num">01</span>
+            <div class="case-info">
+              <h3>Morais de Castro</h3>
+              <p>Indústria Química - Tráfego &amp; Site</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="henrimar">
+            <span class="case-num">02</span>
+            <div class="case-info">
+              <h3>Henrimar</h3>
+              <p>Fabricante de Piscinas - Landing Page</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="siamac">
+            <span class="case-num">03</span>
+            <div class="case-info">
+              <h3>SIAMAC</h3>
+              <p>Sistemas de Automação - Funil Digital</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="transpiraja">
+            <span class="case-num">04</span>
+            <div class="case-info">
+              <h3>Transpirajá</h3>
+              <p>Logística e Transporte - Captação B2B</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="nadier">
+            <span class="case-num">05</span>
+            <div class="case-info">
+              <h3>Nadier Pedreira de Freitas</h3>
+              <p>Advocacia e Direito - Posicionamento Local</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+
+          <div class="case-menu-item" data-case="biomedical">
+            <span class="case-num">06</span>
+            <div class="case-info">
+              <h3>Biomedical</h3>
+              <p>Produtos Médicos - Site &amp; Google Ads</p>
+            </div>
+            <span class="case-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- Right Side: Dynamic Mockup Display -->
+        <div class="case-preview-display scroll-reveal">
+          <div class="browser-container case-browser-mockup">
+            <div class="browser-header">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="browser-address" id="caseBrowserAddress">moraisdecastro.com.br</div>
+            </div>
+            <div class="browser-viewport case-browser-viewport" id="caseBrowserViewport">
+              <!-- Morais de Castro Case Screen -->
+              <div class="case-screen-content active" id="case-morais">
+                <div class="case-header-pill">Química Industrial</div>
+                <h2>Inovação Química &amp; Distribuição em Grande Escala</h2>
+                <p>Desenvolvimento de portal corporativo de alta performance integrado com catálogo de produtos regulados e inteligência de distribuição geográfica.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">+150%</div>
+                  <div class="metric-lbl">Leads Comerciais Gerados pelo Canal Digital</div>
+                </div>
+              </div>
+
+              <!-- Henrimar Case Screen -->
+              <div class="case-screen-content" id="case-henrimar">
+                <div class="case-header-pill">Piscinas &amp; Lazer</div>
+                <h2>Momentos Únicos com a Linha de Piscinas Exclusivas</h2>
+                <p>Landing page focada na conversão de revendedores autorizados e orçamentos locais por geolocalização do cliente final.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">+80%</div>
+                  <div class="metric-lbl">Aumento no Volume de Orçamentos Locais</div>
+                </div>
+              </div>
+
+              <!-- SIAMAC Case Screen -->
+              <div class="case-screen-content" id="case-siamac">
+                <div class="case-header-pill">Automação</div>
+                <h2>Sistemas Inteligentes de Automação Comercial</h2>
+                <p>Website e funil de vendas integrado para sistemas corporativos e ERPs para automação de faturamento e PDVs em lojas.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">12.8%</div>
+                  <div class="metric-lbl">Taxa Média de Conversão de Cliques em Leads</div>
+                </div>
+              </div>
+
+              <!-- Transpirajá Case Screen -->
+              <div class="case-screen-content" id="case-transpiraja">
+                <div class="case-header-pill">Logística B2B</div>
+                <h2>Logística e Transporte Rodoviário de Alta Confiança</h2>
+                <p>Página otimizada para atração de parcerias de carga pesada e captação de novos clientes logísticos nas rodovias nacionais.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">-35% CPL</div>
+                  <div class="metric-lbl">Redução no Custo por Lead no Google Search</div>
+                </div>
+              </div>
+
+              <!-- Nadier Case Screen -->
+              <div class="case-screen-content" id="case-nadier">
+                <div class="case-header-pill">Direito &amp; Advocacia</div>
+                <h2>Assessoria Jurídica de Excelência e Credibilidade</h2>
+                <p>Design sóbrio de altíssimo nível, otimizado para o Google Local e focado na captação qualificada de consultas empresariais.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">+200%</div>
+                  <div class="metric-lbl">Aumento nos Contatos Diretos de Clientes Corporativos</div>
+                </div>
+              </div>
+
+              <!-- Biomedical Case Screen -->
+              <div class="case-screen-content" id="case-biomedical">
+                <div class="case-header-pill">Medicina</div>
+                <h2>Equipamentos e Produtos Médicos de Ponta</h2>
+                <p>Portal institucional completo com especificações reguladas e canais de contato rápidos para hospitais, clínicas e profissionais.</p>
+                <div class="case-metric-card">
+                  <div class="metric-val">3x ROI</div>
+                  <div class="metric-lbl">Retorno sobre o Investimento em Mídia Paga</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-cta-container">
+            <a href="#contato" class="btn-pill btn-pill-blue">QUERO UM CASE ASSIM →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WebCo Labs Section -->
+  <section class="section-labs section-padding">
+    <div class="container">
+      <div class="labs-box scroll-reveal">
+        <div class="labs-content">
+          <span class="labs-tag">LABS DIVISION</span>
+          <h2>WEBCO LABS &mdash; NOSSA DIVISÃO DE TECNOLOGIA</h2>
+          <p>
+            Toda a engenharia de performance, velocidade extrema de carregamento e inteligência artificial que embarcamos nos sites dos nossos clientes é desenvolvida na <strong>WebCo Labs</strong>.
+          </p>
+          <p>
+            Uma divisão focada em criar frameworks modernos, arquiteturas limpas e integrações avançadas de alta escala.
+          </p>
+          <div class="labs-btn-row">
+            <a href="https://webcolabs.com.br" target="_blank" class="btn-pill btn-pill-outline-blue">
+              Conhecer a WebCo Labs 🌐
+            </a>
+          </div>
+        </div>
+        <div class="labs-visual">
+          <div class="labs-glow-cube">
+            <div class="cube-face front">W</div>
+            <div class="cube-face back">C</div>
+            <div class="cube-face right">L</div>
+            <div class="cube-face left">O</div>
+            <div class="cube-face top">A</div>
+            <div class="cube-face bottom">B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section-proposito section-padding" id="sobre">
+    <div class="container">
+      <div class="split-layout" style="align-items: flex-start; gap: 70px;">
+        <!-- Text -->
+        <div class="content-col scroll-reveal">
+          <span class="content-tag">Quem Somos</span>
+          <h2>CRIAMOS MÁQUINAS DE VENDAS DIGITAIS.</h2>
+          <p>
+            A <strong>Web Co Agency</strong> é especialista em transformar pixels em faturamento. Nós não apenas construímos layouts bonitos; nós programamos ferramentas comerciais robustas, leves e desenhadas cientificamente para guiar o lead até a conversão.
+          </p>
+          <p>
+            Através da combinação de designs premium, códigos limpos e campanhas otimizadas de tráfego pago no Google Ads, nosso time garante que sua empresa ganhe a tração e visibilidade necessárias para crescer no ambiente digital de forma sustentável e escalável.
+          </p>
+          
+          <!-- Badges -->
+          <div class="about-badges-row">
+            <div class="about-badge-item">
+              <div class="about-badge-icon">✓</div>
+              <span class="about-badge-label">Personalização Única</span>
+            </div>
+            <div class="about-badge-item">
+              <div class="about-badge-icon">✓</div>
+              <span class="about-badge-label">Foco total em Conversão</span>
+            </div>
+            <div class="about-badge-item">
+              <div class="about-badge-icon">✓</div>
+              <span class="about-badge-label">Segurança &amp; Escalabilidade</span>
+            </div>
+            <div class="about-badge-item">
+              <div class="about-badge-icon">✓</div>
+              <span class="about-badge-label">Time Dedicado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Brand Panel -->
+        <div class="scroll-reveal" style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
+          <div class="contact-info" style="background-color: var(--color-white); border-color: var(--color-slate-dark); padding: 50px;">
+            <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Nossos Pilares</h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6;">
+              No laboratório Web Co Agency, cada pixel e palavra contam. Nossos sites são limpos de código redundante e preparados para carregar instantaneamente, dando ao robô do Google e ao seu cliente exatamente o que eles buscam: clareza, velocidade e segurança.
+            </p>
+            <a href="#contato" class="btn-pill btn-pill-blue" style="margin-top: 15px;">
+              Iniciar Meu Projeto <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Interactive Website Simulator Section -->
   <section class="section-simulator section-padding" id="simulador">
     <div class="container">
@@ -339,15 +761,15 @@
             <div class="checkbox-options">
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleReviewsCheck" checked>
-                <span>⭐ Avaliações Google (Rating 5.0 Stars)</span>
+                <span>⭐ Avaliações Google <span class="sim-badge-opt trust">✓ Gera Confiança</span></span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleMapCheck" checked>
-                <span>📍 Mapa de Localização (Google Maps)</span>
+                <span>📍 Google Maps <span class="sim-badge-opt seo">✓ SEO Local</span></span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleGalleryCheck" checked>
-                <span>📸 Galeria de Fotos / Trabalhos</span>
+                <span>📸 Galeria de Fotos / Cases</span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleFaqCheck" checked>
@@ -355,23 +777,23 @@
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleStatsCheck" checked>
-                <span>Barra de Métricas &amp; Números</span>
+                <span>📈 Barra de Métricas <span class="sim-badge-opt ads">✓ Foco em Ads</span></span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleTestimonialsCheck" checked>
-                <span>Seção de Depoimentos de Clientes</span>
+                <span>💬 Depoimentos de Clientes</span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="togglePricingCheck" checked>
-                <span>Tabela de Planos / Preços</span>
+                <span>🏷️ Tabela de Planos / Preços</span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleFormCheck" checked>
-                <span>Formulário de Contato / Orçamento</span>
+                <span>📝 Formulário de Orçamento <span class="sim-badge-opt conversion">✓ Conversão Direta</span></span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="toggleWhatsappCheck" checked>
-                <span>Botão Flutuante do WhatsApp</span>
+                <span>💬 Botão Flutuante WhatsApp <span class="sim-badge-opt conversion">✓ +140% Leads</span></span>
               </label>
             </div>
           </div>
@@ -676,725 +1098,6 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="section-services section-padding" id="servicos">
-    <div class="container">
-      <div class="services-header-row scroll-reveal">
-        <div class="services-header-left">
-          <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nosso Ecossistema</span>
-          <h2>O SISTEMA COMPLETO POR TRÁS DE MARCAS QUE CRESCEM</h2>
-          <p>
-            Um único time cuidando de marca, presença digital, tráfego pago e performance, com método, consistência e foco total em vendas.
-          </p>
-        </div>
-      </div>
-
-      <div class="services-grid services-grid-6">
-        <!-- Card 1 -->
-        <div class="service-card scroll-reveal">
-          <div class="service-card-top">
-            <div class="service-card-icon">🎨</div>
-            <h3>Identidade &amp; Marca</h3>
-            <p>Uma marca consistente, do conceito aos materiais institucionais, para ser lembrada e reconhecida.</p>
-            <div class="service-card-tags">
-              <span>Criação de marca</span>
-              <span>Branding</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="service-card scroll-reveal" style="transition-delay: 0.05s;">
-          <div class="service-card-top">
-            <div class="service-card-icon">🖥️</div>
-            <h3>Sites &amp; Sistemas</h3>
-            <p>Plataformas rápidas, bonitas e feitas sob medida para converter visitantes em leads qualificados.</p>
-            <div class="service-card-tags">
-              <span>Sites</span>
-              <span>Landing Pages</span>
-              <span>E-commerce</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="service-card scroll-reveal" style="transition-delay: 0.1s;">
-          <div class="service-card-top">
-            <div class="service-card-icon">📱</div>
-            <h3>Redes Sociais</h3>
-            <p>Conteúdo estratégico e gestão de canais que constroem audiência engajada e mantêm sua marca relevante.</p>
-            <div class="service-card-tags">
-              <span>Instagram</span>
-              <span>LinkedIn</span>
-              <span>Facebook</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="service-card scroll-reveal" style="transition-delay: 0.15s;">
-          <div class="service-card-top">
-            <div class="service-card-icon">📈</div>
-            <h3>Campanhas &amp; Anúncios</h3>
-            <p>Mídia paga com foco total em retorno sobre investimento. Mais leads e vendas no Google Ads e Meta Ads.</p>
-            <div class="service-card-tags">
-              <span>Google Ads</span>
-              <span>Meta Ads</span>
-              <span>Remarketing</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="service-card scroll-reveal" style="transition-delay: 0.2s;">
-          <div class="service-card-top">
-            <div class="service-card-icon">🔍</div>
-            <h3>SEO &amp; Conteúdo</h3>
-            <p>Sua empresa encontrada no Google organicamente por quem realmente procura o que você vende.</p>
-            <div class="service-card-tags">
-              <span>SEO</span>
-              <span>Blogs</span>
-              <span>Velocidade</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="service-card scroll-reveal" style="transition-delay: 0.25s;">
-          <div class="service-card-top">
-            <div class="service-card-icon">💡</div>
-            <h3>Consultorias &amp; Estratégia</h3>
-            <p>Análise de processos comerciais, funil de vendas e treinamento para acelerar o crescimento do seu negócio.</p>
-            <div class="service-card-tags">
-              <span>Atendimento</span>
-              <span>CRMs</span>
-              <span>Funil de Vendas</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Investment vs Profit Calculator (Proxon Style) -->
-  <section class="section-roi section-padding">
-    <div class="container">
-      <div class="roi-wrapper">
-        <div class="roi-info scroll-reveal">
-          <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Métricas de ROI</span>
-          <h2>A VIRADA NA RELAÇÃO ENTRE O QUE ENTRA E O QUE SAI</h2>
-          <p>
-            Gerenciamos seu orçamento de marketing com foco total em rentabilidade. Arraste o simulador abaixo para estimar o crescimento do seu faturamento com a nossa gestão de tráfego e sites de alta performance.
-          </p>
-          <div class="roi-simulator-box">
-            <div class="roi-slider-group">
-              <div class="roi-slider-label">
-                <span>Investimento Mensal em Tráfego:</span>
-                <strong id="roiInvestText">R$ 2.000</strong>
-              </div>
-              <input type="range" id="roiSlider" min="1000" max="20000" step="500" value="2000" class="roi-range">
-            </div>
-            
-            <div class="roi-metrics-grid">
-              <div class="roi-metric-item">
-                <span>Cliques Estimados</span>
-                <h4 id="roiClicksVal">5.000</h4>
-              </div>
-              <div class="roi-metric-item">
-                <span>Leads Qualificados</span>
-                <h4 id="roiLeadsVal">350</h4>
-              </div>
-              <div class="roi-metric-item highlight">
-                <span>Retorno Estimado (Lucro)</span>
-                <h4 id="roiProfitVal">R$ 10.000</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Interactive Chart Visual (SVG Curve) -->
-        <div class="roi-chart-box scroll-reveal">
-          <div class="roi-chart-header">
-            <span>INVESTIMENTO X LUCRO ESTIMADO</span>
-            <div class="roi-chart-legend">
-              <span class="legend-item invest">Investimento</span>
-              <span class="legend-item profit">Retorno</span>
-            </div>
-          </div>
-          <div class="roi-chart-canvas">
-            <svg viewBox="0 0 500 250" class="roi-svg-chart">
-              <!-- Grid Lines -->
-              <line x1="0" y1="200" x2="500" y2="200" stroke="#f1f5f9" stroke-width="2"/>
-              <line x1="0" y1="130" x2="500" y2="130" stroke="#f1f5f9" stroke-dasharray="4"/>
-              <line x1="0" y1="60" x2="500" y2="60" stroke="#f1f5f9" stroke-dasharray="4"/>
-              
-              <!-- Shading under the curves -->
-              <path d="M 0 200 Q 150 180 300 150 T 500 130 L 500 200 Z" fill="rgba(148, 163, 184, 0.08)"/>
-              <path id="chartProfitArea" d="M 0 200 Q 150 140 300 80 T 500 30 L 500 200 Z" fill="rgba(0, 140, 255, 0.06)"/>
-
-              <!-- Investment Line -->
-              <path d="M 0 200 Q 150 180 300 150 T 500 130" fill="none" stroke="#94a6b8" stroke-width="3" stroke-dasharray="5"/>
-              <!-- Profit Line -->
-              <path id="chartProfitLine" d="M 0 200 Q 150 140 300 80 T 500 30" fill="none" stroke="var(--color-blue-electric)" stroke-width="4"/>
-              
-              <!-- Chart Nodes -->
-              <circle cx="300" cy="80" r="6" fill="var(--color-blue-electric)" stroke="#ffffff" stroke-width="2"/>
-              <text x="315" y="75" fill="var(--color-blue-electric)" font-weight="bold" font-size="12">Começou com a WEBCO</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Systems Showcase Section -->
-  <section class="systems-section section-padding" id="showcase">
-    <div class="container">
-      <div class="section-showcase-title scroll-reveal">
-        <span class="content-tag">Demonstração de Sistemas</span>
-        <h2>PREVISÕES DIGITAIS EM AÇÃO</h2>
-        <p>Desenvolvemos projetos focados em máxima conversão e controle absoluto de dados.</p>
-      </div>
-
-      <div class="systems-stack">
-        <!-- Container 1: Velocidade de Site -->
-        <div class="system-container-item theme-lime scroll-reveal">
-          <div class="system-split-row">
-            <!-- Info Column -->
-            <div class="system-info-col">
-              <div class="system-info-header">
-                <span class="system-info-icon">⚡</span>
-                <h3 class="system-info-title">Velocidade &amp; Conversão</h3>
-              </div>
-              <p class="system-info-desc">
-                Um site lento custa vendas. Com os nossos desenvolvimentos baseados em WebCo Labs, seus leads carregam a página de forma instantânea em dispositivos móveis e desktops.
-              </p>
-              <p class="system-info-desc">
-                Estruturas leves validadas nas métricas do <strong>Core Web Vitals</strong> do Google garantem uma navegação fluida, reduzindo a taxa de rejeição e aumentando em até 40% a taxa de conversão final do lead.
-              </p>
-              <div class="system-actions-row">
-                <a href="#contato" class="btn-pill">
-                  QUERO UM SITE RÁPIDO →
-                </a>
-              </div>
-            </div>
-            
-            <!-- Graphical / Mockup Column -->
-            <div class="system-browser-col">
-              <div class="graphic-wrapper">
-                <!-- Floating Icon Badge -->
-                <div class="floating-square-badge">📱</div>
-
-                <!-- Floating Overlapping Cards -->
-                <div class="floating-panel-card pos-1">
-                  <span class="panel-status green">Excelente</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Mobile Friendly</strong><br>100% Responsivo</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-check">✓</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="floating-panel-card pos-2">
-                  <span class="panel-status green">Otimizado</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Tamanho da Página</strong><br>Reduzido em 75%</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-check">✓</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="floating-panel-card pos-3">
-                  <span class="panel-status green">Carregamento</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">LCP (Abertura)</strong><br>0.8 segundos</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-check">✓</button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Mock-Browser -->
-                <div class="browser-container">
-                  <div class="browser-header">
-                    <div class="browser-dots">
-                      <span class="browser-dot red"></span>
-                      <span class="browser-dot yellow"></span>
-                      <span class="browser-dot green"></span>
-                    </div>
-                    <div class="browser-address">labs.webcoagency.site/speed-test</div>
-                  </div>
-                  <div class="browser-viewport">
-                    <div class="mock-dashboard">
-                      <div class="mock-dash-card" style="border-left: 4px solid #00c853;">
-                        <h4>Google PageSpeed Score</h4>
-                        <p>99 / 100</p>
-                        <span>✓ Aprovado no Core Web Vitals</span>
-                      </div>
-                      <div class="mock-list">
-                        <div class="mock-list-item">
-                          <div class="mock-indicator-dot"></div>
-                          <span>Primeira Renderização de Conteúdo (FCP): 0.3s</span>
-                        </div>
-                        <div class="mock-list-item">
-                          <div class="mock-indicator-dot"></div>
-                          <span>Tempo Total de Bloqueio (TBT): 10ms</span>
-                        </div>
-                      </div>
-                      <div>
-                        <span style="font-size: 0.72rem; font-weight: 700; color: #4e657d; text-transform: uppercase;">Uso de Banda de Rede</span>
-                        <div class="mock-progress-bar">
-                          <div class="mock-progress-fill" style="width: 95%; background-color: #00c853;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Container 2: Campanhas Google Ads -->
-        <div class="system-container-item theme-blue scroll-reveal">
-          <div class="system-split-row reverse">
-            <!-- Graphical / Mockup Column -->
-            <div class="system-browser-col">
-              <div class="graphic-wrapper">
-                <!-- Floating Icon Badge -->
-                <div class="floating-square-badge">📈</div>
-
-                <!-- Floating Overlapping Cards -->
-                <div class="floating-panel-card pos-1">
-                  <span class="panel-status green">Conversões</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Leads Gerados</strong><br>+84 contatos este mês</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-check">✓</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="floating-panel-card pos-2">
-                  <span class="panel-status blue">Palavras-Chave</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Termos de Compra</strong><br>Foco em Alta Intenção</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-info">ℹ</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="floating-panel-card pos-3">
-                  <span class="panel-status orange">Custo por Lead</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Custo Otimizado</strong><br>Queda de -30% no CPL</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-cross">✓</button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Mock-Browser -->
-                <div class="browser-container">
-                  <div class="browser-header">
-                    <div class="browser-dots">
-                      <span class="browser-dot red"></span>
-                      <span class="browser-dot yellow"></span>
-                      <span class="browser-dot green"></span>
-                    </div>
-                    <div class="browser-address">labs.webcoagency.site/google-ads</div>
-                  </div>
-                  <div class="browser-viewport">
-                    <div class="mock-dashboard">
-                      <div class="mock-dash-row">
-                        <div class="mock-dash-card">
-                          <h4>Cliques</h4>
-                          <p>1,420</p>
-                          <span>+22% alta</span>
-                        </div>
-                        <div class="mock-dash-card">
-                          <h4>Conversão</h4>
-                          <p>12.4%</p>
-                          <span>+3.2%</span>
-                        </div>
-                      </div>
-                      <div class="mock-list">
-                        <div class="mock-list-item" style="border-left-color: var(--color-blue-neon);">
-                          <div class="mock-indicator-dot" style="background-color: var(--color-blue-neon);"></div>
-                          <span>Termo: "comprar site profissional" - CTR 18%</span>
-                        </div>
-                        <div class="mock-list-item" style="border-left-color: var(--color-blue-neon);">
-                          <div class="mock-indicator-dot" style="background-color: var(--color-blue-neon);"></div>
-                          <span>Termo: "agencia google ads" - CTR 15%</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Info Column -->
-            <div class="system-info-col">
-              <div class="system-info-header">
-                <span class="system-info-icon">📈</span>
-                <h3 class="system-info-title">Google Ads Inteligente</h3>
-              </div>
-              <p class="system-info-desc">
-                Não queime dinheiro com cliques vazios. Nossas campanhas são desenhadas com foco exclusivo em compradores qualificados, buscando leads que já querem seu serviço.
-              </p>
-              <p class="system-info-desc">
-                Acompanhamos de perto o custo de aquisição de cada lead (CPL) e o ROI real das campanhas, refinando negativamente termos desnecessários para direcionar sua verba apenas a quem traz lucro.
-              </p>
-              <div class="system-actions-row">
-                <a href="#contato" class="btn-pill">
-                  QUERO ANUNCIAR NO GOOGLE →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Container 3: Automacao de Leads -->
-        <div class="system-container-item theme-lavender scroll-reveal">
-          <div class="system-split-row">
-            <!-- Info Column -->
-            <div class="system-info-col">
-              <div class="system-info-header">
-                <span class="system-info-icon">💬</span>
-                <h3 class="system-info-title">Automação de Contatos</h3>
-              </div>
-              <p class="system-info-desc">
-                Quando um lead chega, o tempo de resposta é crucial. Integramos seus formulários diretamente a disparos de WhatsApp e sistemas de CRM em nuvem.
-              </p>
-              <p class="system-info-desc">
-                Assim que o cliente envia a mensagem pelo site, o time comercial recebe uma notificação instantânea e o cliente é respondido no ato, maximizando o engajamento e fechamento comercial.
-              </p>
-              <div class="system-actions-row">
-                <a href="#contato" class="btn-pill">
-                  QUERO AUTOMATIZAR VENDAS →
-                </a>
-              </div>
-            </div>
-            
-            <!-- Graphical / Mockup Column -->
-            <div class="system-browser-col">
-              <div class="graphic-wrapper">
-                <!-- Floating Icon Badge -->
-                <div class="floating-square-badge">💬</div>
-
-                <!-- Floating Overlapping Cards -->
-                <div class="floating-panel-card pos-1">
-                  <span class="panel-status green">Notificação</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Lead Enviado</strong><br>João via Site</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-check">✓</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="floating-panel-card pos-2">
-                  <span class="panel-status green">WhatsApp</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Mensagem Auto</strong><br>Enviada ao Cliente</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-check" style="background-color: #e8fdec; color: #128c7e;">wa</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="floating-panel-card pos-3">
-                  <span class="panel-status blue">Sincronizado</span>
-                  <div class="panel-row">
-                    <span class="panel-text"><strong class="panel-title-bold">Integração CRM</strong><br>Lead cadastrado no pipeline</span>
-                    <div class="panel-actions">
-                      <button class="panel-btn btn-info">✓</button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Mock-Browser -->
-                <div class="browser-container">
-                  <div class="browser-header">
-                    <div class="browser-dots">
-                      <span class="browser-dot red"></span>
-                      <span class="browser-dot yellow"></span>
-                      <span class="browser-dot green"></span>
-                    </div>
-                    <div class="browser-address">labs.webcoagency.site/leads-automation</div>
-                  </div>
-                  <div class="browser-viewport">
-                    <div class="mock-dashboard">
-                      <div class="mock-dash-card" style="border-left: 4px solid #7c3aed;">
-                        <h4>Lead Pipeline Ativo</h4>
-                        <p>Disparos Automáticos</p>
-                        <span>✓ Fluxo ativo sem falhas</span>
-                      </div>
-                      <div class="mock-list">
-                        <div class="mock-list-item" style="border-left-color: #7c3aed;">
-                          <div class="mock-indicator-dot" style="background-color: #7c3aed;"></div>
-                          <span>Captura de formulários -> Gatilho instantâneo</span>
-                        </div>
-                        <div class="mock-list-item" style="border-left-color: #7c3aed;">
-                          <div class="mock-indicator-dot" style="background-color: #7c3aed;"></div>
-                          <span>WhatsApp API respondendo em 3 segundos</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Portfolio Section -->
-  <section class="section-portfolio section-padding" id="portfolio">
-    <div class="container">
-      <div class="section-showcase-title scroll-reveal" style="margin-bottom: 60px;">
-        <span class="content-tag" style="background-color: rgba(0, 140, 255, 0.08); color: var(--color-blue-electric);">Nossos Cases</span>
-        <h2>PROJETOS DE ALTA PERFORMANCE COM RESULTADOS REAIS</h2>
-        <p>Marcas de diferentes setores que escolheram crescer com estratégia, consistência e resultado.</p>
-      </div>
-
-      <div class="cases-split-container">
-        <!-- Left Side: Interactive Cases Menu -->
-        <div class="cases-list-menu scroll-reveal">
-          <div class="case-menu-item active" data-case="morais">
-            <span class="case-num">01</span>
-            <div class="case-info">
-              <h3>Morais de Castro</h3>
-              <p>Indústria Química - Tráfego &amp; Site</p>
-            </div>
-            <span class="case-arrow">→</span>
-          </div>
-
-          <div class="case-menu-item" data-case="henrimar">
-            <span class="case-num">02</span>
-            <div class="case-info">
-              <h3>Henrimar</h3>
-              <p>Fabricante de Piscinas - Landing Page</p>
-            </div>
-            <span class="case-arrow">→</span>
-          </div>
-
-          <div class="case-menu-item" data-case="siamac">
-            <span class="case-num">03</span>
-            <div class="case-info">
-              <h3>SIAMAC</h3>
-              <p>Sistemas de Automação - Funil Digital</p>
-            </div>
-            <span class="case-arrow">→</span>
-          </div>
-
-          <div class="case-menu-item" data-case="transpiraja">
-            <span class="case-num">04</span>
-            <div class="case-info">
-              <h3>Transpirajá</h3>
-              <p>Logística e Transporte - Captação B2B</p>
-            </div>
-            <span class="case-arrow">→</span>
-          </div>
-
-          <div class="case-menu-item" data-case="nadier">
-            <span class="case-num">05</span>
-            <div class="case-info">
-              <h3>Nadier Pedreira de Freitas</h3>
-              <p>Advocacia e Direito - Posicionamento Local</p>
-            </div>
-            <span class="case-arrow">→</span>
-          </div>
-
-          <div class="case-menu-item" data-case="biomedical">
-            <span class="case-num">06</span>
-            <div class="case-info">
-              <h3>Biomedical</h3>
-              <p>Produtos Médicos - Site &amp; Google Ads</p>
-            </div>
-            <span class="case-arrow">→</span>
-          </div>
-        </div>
-
-        <!-- Right Side: Dynamic Mockup Display -->
-        <div class="case-preview-display scroll-reveal">
-          <div class="browser-container case-browser-mockup">
-            <div class="browser-header">
-              <div class="browser-dots">
-                <span class="browser-dot red"></span>
-                <span class="browser-dot yellow"></span>
-                <span class="browser-dot green"></span>
-              </div>
-              <div class="browser-address" id="caseBrowserAddress">moraisdecastro.com.br</div>
-            </div>
-            <div class="browser-viewport case-browser-viewport" id="caseBrowserViewport">
-              <!-- Morais de Castro Case Screen -->
-              <div class="case-screen-content active" id="case-morais">
-                <div class="case-header-pill">Química Industrial</div>
-                <h2>Inovação Química &amp; Distribuição em Grande Escala</h2>
-                <p>Desenvolvimento de portal corporativo de alta performance integrado com catálogo de produtos regulados e inteligência de distribuição geográfica.</p>
-                <div class="case-metric-card">
-                  <div class="metric-val">+150%</div>
-                  <div class="metric-lbl">Leads Comerciais Gerados pelo Canal Digital</div>
-                </div>
-              </div>
-
-              <!-- Henrimar Case Screen -->
-              <div class="case-screen-content" id="case-henrimar">
-                <div class="case-header-pill">Piscinas &amp; Lazer</div>
-                <h2>Momentos Únicos com a Linha de Piscinas Exclusivas</h2>
-                <p>Landing page focada na conversão de revendedores autorizados e orçamentos locais por geolocalização do cliente final.</p>
-                <div class="case-metric-card">
-                  <div class="metric-val">+80%</div>
-                  <div class="metric-lbl">Aumento no Volume de Orçamentos Locais</div>
-                </div>
-              </div>
-
-              <!-- SIAMAC Case Screen -->
-              <div class="case-screen-content" id="case-siamac">
-                <div class="case-header-pill">Automação</div>
-                <h2>Sistemas Inteligentes de Automação Comercial</h2>
-                <p>Website e funil de vendas integrado para sistemas corporativos e ERPs para automação de faturamento e PDVs em lojas.</p>
-                <div class="case-metric-card">
-                  <div class="metric-val">12.8%</div>
-                  <div class="metric-lbl">Taxa Média de Conversão de Cliques em Leads</div>
-                </div>
-              </div>
-
-              <!-- Transpirajá Case Screen -->
-              <div class="case-screen-content" id="case-transpiraja">
-                <div class="case-header-pill">Logística B2B</div>
-                <h2>Logística e Transporte Rodoviário de Alta Confiança</h2>
-                <p>Página otimizada para atração de parcerias de carga pesada e captação de novos clientes logísticos nas rodovias nacionais.</p>
-                <div class="case-metric-card">
-                  <div class="metric-val">-35% CPL</div>
-                  <div class="metric-lbl">Redução no Custo por Lead no Google Search</div>
-                </div>
-              </div>
-
-              <!-- Nadier Case Screen -->
-              <div class="case-screen-content" id="case-nadier">
-                <div class="case-header-pill">Direito &amp; Advocacia</div>
-                <h2>Assessoria Jurídica de Excelência e Credibilidade</h2>
-                <p>Design sóbrio de altíssimo nível, otimizado para o Google Local e focado na captação qualificada de consultas empresariais.</p>
-                <div class="case-metric-card">
-                  <div class="metric-val">+200%</div>
-                  <div class="metric-lbl">Aumento nos Contatos Diretos de Clientes Corporativos</div>
-                </div>
-              </div>
-
-              <!-- Biomedical Case Screen -->
-              <div class="case-screen-content" id="case-biomedical">
-                <div class="case-header-pill">Medicina</div>
-                <h2>Equipamentos e Produtos Médicos de Ponta</h2>
-                <p>Portal institucional completo com especificações reguladas e canais de contato rápidos para hospitais, clínicas e profissionais.</p>
-                <div class="case-metric-card">
-                  <div class="metric-val">3x ROI</div>
-                  <div class="metric-lbl">Retorno sobre o Investimento em Mídia Paga</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="case-cta-container">
-            <a href="#contato" class="btn-pill btn-pill-blue">QUERO UM CASE ASSIM →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WebCo Labs Section -->
-  <section class="section-labs section-padding">
-    <div class="container">
-      <div class="labs-box scroll-reveal">
-        <div class="labs-content">
-          <span class="labs-tag">LABS DIVISION</span>
-          <h2>WEBCO LABS &mdash; NOSSA DIVISÃO DE TECNOLOGIA</h2>
-          <p>
-            Toda a engenharia de performance, velocidade extrema de carregamento e inteligência artificial que embarcamos nos sites dos nossos clientes é desenvolvida na <strong>WebCo Labs</strong>.
-          </p>
-          <p>
-            Uma divisão focada em criar frameworks modernos, arquiteturas limpas e integrações avançadas de alta escala.
-          </p>
-          <div class="labs-btn-row">
-            <a href="https://webcolabs.com.br" target="_blank" class="btn-pill btn-pill-outline-blue">
-              Conhecer a WebCo Labs 🌐
-            </a>
-          </div>
-        </div>
-        <div class="labs-visual">
-          <div class="labs-glow-cube">
-            <div class="cube-face front">W</div>
-            <div class="cube-face back">C</div>
-            <div class="cube-face right">L</div>
-            <div class="cube-face left">O</div>
-            <div class="cube-face top">A</div>
-            <div class="cube-face bottom">B</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="section-proposito section-padding" id="sobre">
-    <div class="container">
-      <div class="split-layout" style="align-items: flex-start; gap: 70px;">
-        <!-- Text -->
-        <div class="content-col scroll-reveal">
-          <span class="content-tag">Quem Somos</span>
-          <h2>CRIAMOS MÁQUINAS DE VENDAS DIGITAIS.</h2>
-          <p>
-            A <strong>Web Co Agency</strong> é especialista em transformar pixels em faturamento. Nós não apenas construímos layouts bonitos; nós programamos ferramentas comerciais robustas, leves e desenhadas cientificamente para guiar o lead até a conversão.
-          </p>
-          <p>
-            Através da combinação de designs premium, códigos limpos e campanhas otimizadas de tráfego pago no Google Ads, nosso time garante que sua empresa ganhe a tração e visibilidade necessárias para crescer no ambiente digital de forma sustentável e escalável.
-          </p>
-          
-          <!-- Badges -->
-          <div class="about-badges-row">
-            <div class="about-badge-item">
-              <div class="about-badge-icon">✓</div>
-              <span class="about-badge-label">Personalização Única</span>
-            </div>
-            <div class="about-badge-item">
-              <div class="about-badge-icon">✓</div>
-              <span class="about-badge-label">Foco total em Conversão</span>
-            </div>
-            <div class="about-badge-item">
-              <div class="about-badge-icon">✓</div>
-              <span class="about-badge-label">Segurança &amp; Escalabilidade</span>
-            </div>
-            <div class="about-badge-item">
-              <div class="about-badge-icon">✓</div>
-              <span class="about-badge-label">Time Dedicado</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Side Brand Panel -->
-        <div class="scroll-reveal" style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
-          <div class="contact-info" style="background-color: var(--color-white); border-color: var(--color-slate-dark); padding: 50px;">
-            <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--color-text-main);">Nossos Pilares</h3>
-            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6;">
-              No laboratório Web Co Agency, cada pixel e palavra contam. Nossos sites são limpos de código redundante e preparados para carregar instantaneamente, dando ao robô do Google e ao seu cliente exatamente o que eles buscam: clareza, velocidade e segurança.
-            </p>
-            <a href="#contato" class="btn-pill btn-pill-blue" style="margin-top: 15px;">
-              Iniciar Meu Projeto <span class="arrow">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact/Lead Capture Section -->
   <section class="contact-section" id="contato">

@@ -3797,6 +3797,38 @@ textarea.form-input {
 .cube-face.top    { transform: rotateX(90deg) translateZ(50px); }
 .cube-face.bottom { transform: rotateX(-90deg) translateZ(50px); }
 
+/* Simulator Checkbox Badges */
+.sim-badge-opt {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sim-badge-opt.trust {
+  background-color: rgba(0, 200, 83, 0.08);
+  color: #00c853;
+}
+
+.sim-badge-opt.seo {
+  background-color: rgba(217, 119, 6, 0.08);
+  color: #d97706;
+}
+
+.sim-badge-opt.ads {
+  background-color: rgba(0, 140, 255, 0.08);
+  color: #008cff;
+}
+
+.sim-badge-opt.conversion {
+  background-color: rgba(124, 58, 237, 0.08);
+  color: #7c3aed;
+}
+
 
 
 
